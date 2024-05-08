@@ -15,9 +15,6 @@ AWS.config.update({
 // Create an instance of the SNS service
 const sns = new AWS.SNS();
 
-// Define your SNS topic ARN
-const topicArn = 'arn:aws:sns:ap-south-1:058264442626:Dhanxpert_New';
-
 // Endpoint to send OTP
 app.post('/send-otp', (req, res) => {
   const { phoneNumber } = req.body;
